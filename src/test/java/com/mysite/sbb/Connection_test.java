@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Connection_test {
-    @GetMapping(value = "/hello-front")
+    @GetMapping(value = "/hello")
     public ResponseEntity<String> fromBackend(){
         return ResponseEntity.ok("Connection test succeeded");
     }
