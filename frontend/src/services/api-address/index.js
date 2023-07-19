@@ -1,3 +1,3 @@
-const useApiAddress = ()=> process.env.REACT_APP_API_ADDRESS;
+const useApiAddress = () => "http://localhost:8080";
 
 export default useApiAddress;
