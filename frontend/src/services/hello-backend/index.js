@@ -7,7 +7,7 @@ const useHelloBackend = () => {
   return async () => {
     const axiosResult = await axios({
       method: "get",
-      url: `${apiAddress}/hello`,
+      url: 'http://localhost:8080',
     });
     const result = axiosResult.data;
     return result;
