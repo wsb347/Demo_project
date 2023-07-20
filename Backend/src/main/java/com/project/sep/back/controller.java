@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 @RequestMapping("/api/users")
 public class UsersController {
 
-    User = null;
     private final UserService userService;
 
     @Autowired
@@ -17,7 +16,7 @@ public class UsersController {
         this.userService = userService;
     }
 
-    @PostMapping("/social-login")
+    @GetMapping("/social-login")
     public ResponseEntity<?> socialLogin(@RequestBody User user) {
         // Temp Logic
         String result = userService.socialLogin(user);
@@ -31,14 +30,14 @@ public class UsersController {
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/signup")
+    @PostMapping("/new-user")
     public ResponseEntity<?> signup(@RequestBody User user) {
         // Temp Logic
         String result = userService.signup(user);
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public ResponseEntity<?> login(@RequestBody User user) {
         // Temp Logic
         String result = userService.login(user);
@@ -51,17 +50,21 @@ public class UserService {
 
     public String socialLogin(User user) {
         // SNS 인증 정보를 이용한 로그인 처리
+        return "Not implemented yet.";
     }
 
     public String logout() {
         // 로그아웃 처리
+        return "Not implemented yet.";
     }
 
     public String signup(User user) {
         // 회원가입 처리
+        return "Not implemented yet.";
     }
 
     public String login(User user) {
         // 일반 로그인 처리
+        return "Not implemented yet.";
     }
 }
