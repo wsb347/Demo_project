@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 43, 43);
+
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
