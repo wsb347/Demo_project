@@ -2,11 +2,11 @@ import axios from "axios";
 import useApiAddress from "../api-address";
 const useSignIn = () => {
   const apiAddress = useApiAddress();
-  return async ({ email, password, name, id }) => {
+  return async ({ loginId, logicPw, nickname }) => {
     const axiosResult = await axios({
       method: "post",
       url: `${apiAddress}/users/signup`,
-      data: { email, password, name, id },
+      data: { loginId, logicPw, nickname },
     });
     // window.localStorage.setItem('token',axiosResult.data.token);
   };

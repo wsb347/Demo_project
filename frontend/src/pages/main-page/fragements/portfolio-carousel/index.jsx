@@ -28,10 +28,14 @@ const PortfolioCarousel = () => {
   return (
     <div className={ss("wrapper")}>
       <Carousel responsive={responsive}>
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        {/* <div className={ss("list", "item1")}>Item 1</div>
+        <div className={ss("list", "item2")}>Item 2</div>
+        <div className={ss("list", "item3")}>Item 3</div>
+        <div className={ss("list", "item4")}>Item 4</div> */}
       </Carousel>
     </div>
   );
