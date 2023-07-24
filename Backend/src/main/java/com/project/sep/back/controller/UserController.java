@@ -1,7 +1,7 @@
 package com.project.sep.back.controller;
 
 import com.project.sep.back.Entity.User;
-import com.project.sep.back.UserService;
+import com.project.sep.back.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
